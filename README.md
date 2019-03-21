@@ -17,22 +17,22 @@ EStore电脑商城
 -------
 一个基于JavaWeb的网上电子城项目,这个项目可以熟悉MVC开发模式，方便以后学习SSM等技术
 
-#使用技术
+使用技术
+-------
+*IDE：Eclipse
+*数据库：MySQL
+*数据源：C3P0
+*JDBC 工具：DBUtils
+*前端框架：Bootstrap
+*Ajax 解决方案：jQuery + JavaScript + JSON + google-gson
 
-##IDE：Eclipse
-##数据库：MySQL
-##数据源：C3P0
-##JDBC 工具：DBUtils
-##前端框架：Bootstrap
-##Ajax 解决方案：jQuery + JavaScript + JSON + google-gson
-
-#快速上手
-
-##在你的MySQL中创建一个名为estore的数据库（字符编码gb2312），导入使用我提供的estore.sql
-##使用eclipse导入项目
-##用到的jar包在WEB-INF/lib目录下，记得添加tomcat的jar包，build path即可
-##修改src/c3p0-config.xml中的数据库账号密码
-##在eclipse中配置好tomcat，run on server即可
+快速上手
+-------
+*在你的MySQL中创建一个名为estore的数据库（字符编码gb2312），导入使用我提供的estore.sql
+*使用eclipse导入项目
+*用到的jar包在WEB-INF/lib目录下，记得添加tomcat的jar包，build path即可
+*修改src/c3p0-config.xml中的数据库账号密码
+*在eclipse中配置好tomcat，run on server即可
 
 
 
