@@ -44,11 +44,17 @@ JavaWEB电商项目(mysql)
 -------
 
 userinfo 支付账号
+
 account  账号
+
 login    用户登录
+
 mycomputer   用来存储商品信息
+
 tradeitem  具体交易信息  
+
 tradeid  用户交易流水   
+
 usermes  用户详细信
 
 
