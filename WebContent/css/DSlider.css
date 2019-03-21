@@ -1,0 +1,99 @@
+html,body,div,ul,li,img,a{margin:0;padding: 0;}
+html{
+	font-family: 'YA HEi',sans-serif;
+	font-size: 16px;
+}
+ul{list-style: none;}
+.DSlider-wrap{
+	width:100%;
+	height:380px;
+	overflow: hidden;
+	position: relative;
+	box-shadow:  0 0 20px #fff;
+}
+.Slider{
+	width:100%;
+	height: 100%;
+	position: relative;
+}
+.Slider li{
+	width:100%;
+	float: left;
+	overflow: hidden;
+	height: 100%;
+}
+.Slider li  img{
+	display: block;
+	margin: 0 auto;
+ 	overflow: hidden;
+	width:100%;
+}
+.showTitle,
+.showControl a{
+	opacity: 0.6;
+
+}
+.showControl a:hover{
+	opacity: 1;
+}
+.showTitle{
+	color:white;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width:100%;
+	height:20px;
+	padding:5px 0 5px 5px;
+	background-color: black;
+	z-index: 3;
+}
+.showPage{
+	position: absolute;
+	width:120px;
+	height:20px;
+	background-color: transparent;
+	left:50%;
+	margin-left: -60px;
+	bottom: 5px;
+	z-index: 3;
+}
+.showPage a{
+	width:12px;
+	height:12px;
+	margin:0 5px;
+	display: inline-block;
+	border-radius: 50px;
+	text-indent: -100px;
+	background-color: white;
+	font-size: 0;
+	overflow: hidden;
+}
+.showPage a.active{
+	background-color: #5473bf;
+}
+.showControl a{
+	position: relative;
+	width:30px;
+	height: 30px;
+	display: inline-block;
+	
+	cursor: pointer;
+	transition:opacity 0.5s;
+}
+.showControl{
+	width:100%;
+	height: 30px;
+	position: absolute;
+	bottom: 50%;
+	background-color: transparent;
+	z-index: 3;
+}
+.prev {
+	background: url("../imgs/hislider-arrow.png") no-repeat 0 0 transparent;
+	background-position: 0 0;
+}
+.next {
+	background: url("../imgs/hislider-arrow.png") no-repeat -30px 0 transparent;
+	background-position: -30px 0;
+	float: right;
+}

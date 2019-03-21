@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/body.css" />
+<script type="text/javascript" src="public/js/jquery.1.9.1.js"></script>
+</head>
+<body>
+	<div class="container">
+		<section id="content">
+
+		<h1>密码修改</h1>
+		<div>
+			<input type="text" placeholder="账号" required="" id="account" />
+		</div>
+		<div>
+			<input type="password" placeholder="密码" required="" id="xpass" />
+		</div>
+
+		
+			<div class="">
+				<span class="help-block u-errormessage" id="js-server-helpinfo">&nbsp;</span>
+			</div>
+			<div>
+				<!-- <input type="submit" value="Log in" /> -->
+				<input type="submit" value="确认" class="btn btn-primary"
+					id="js-btn-login" onclick="update()" /> 
+				<!-- <a href="#">Register</a> -->
+			</div>
+
+			<div class="button">
+				<span class="help-block u-errormessage" id="js-server-helpinfo">&nbsp;</span>
+
+			</div> <!-- button --></section>
+		<!-- content -->
+	</div>
+	<!-- container -->
+
+
+	<br><br><br><br>
+					<div style="text-align: center;"></div> <script
+						type="text/javascript">
+				
+						function update() {
+							$.ajax({
+								url : "update",
+								type : "post",
+								data : {
+									oper : "update",
+									account : $("#account").val(),
+									pass : $("#xpass").val(),
+							
+								},
+								dataType : "json",
+								success : function(data) {
+									var reg = new RegExp('"', "g");
+									var msg = data = data.replace(reg, "");
+									$("#msg").html(msg);
+									if (msg == "修改成功") {
+
+										window.location.href = "computerServlet?method=getComputers";
+									} else {
+										alert(data);
+									}
+								}
+
+							})
+						}
+					</script>
+</body>
+</html>

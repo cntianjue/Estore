@@ -1,0 +1,108 @@
+.goodinfo{
+    width:1000px;
+    height: 300px;
+    margin:0 auto;
+}
+.goodinfo-content,.goodinfo-img{
+    height: 100%;
+}
+.goodimg{
+ display: inline-block;
+    width:100%;
+    height: 100%;
+}
+.goodcount,.goodname,.goodprice,.btn-add{
+    margin-top: 10px;
+}
+.goodname,.goodprice{
+    height: 60px;
+    line-height: 30px;
+    font-size: 16px;
+    width: 300px;
+}
+.goodprice{
+    width: 200px;
+    background-color: #ddd;
+    color:#1296db;
+    font-size: 36px;
+    text-align: center;
+    line-height: 60px;
+}
+.goodcount{
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+.btn-add{
+    margin-top:30px;
+    height: 60px;
+}
+.btn-add button{
+    margin-left:0;
+}
+.good-nav{
+    height: 60px;
+    width: 1000px;
+    margin:0 auto;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+.container{
+    height: 60px;
+    line-height: 60px;
+}
+.goodinfo-img{
+    padding-left:0px;
+}
+.goodinfo-img img{
+    height: 100%;
+}
+.good{
+    width:1000px;
+    text-align: center;
+    margin:0 auto;
+}
+.good-zone{
+    list-style: none;
+    position: relative;
+    padding:0;
+}
+.good-des,.good-commit{
+    width:100%;
+    height: 500px;
+    border:1px solid #ccc;
+    border-top:none;
+    text-align:left;
+}
+.good-commit{
+    display: none;
+}
+
+
+/*
+slide 显示添加商品反馈
+*/
+.add-info{
+	width:100px;
+	height:50px;
+	line-height:30px;
+	text-align:center;
+	box-sizing:border-box;
+	padding:10px;
+	border:1px solid #1296db;
+	color:#1296db;
+	background-color:#fff;
+	position:absolute;
+	top:53%;
+	left:47%;
+	z-index:3;
+	border-radius:5px;
+	display:none;
+}
+
+
+.btn-black-add{
+top:230px;
+left:16px;	
+}

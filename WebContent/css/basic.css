@@ -1,0 +1,154 @@
+/*
+鍩鸿壊璋�#1296db
+*/
+/* header, footer, body, html, ul, li, p, h1, h2, input {
+	margin: 0;
+	height: 0;
+	outline: none;
+} */
+html,body{
+	height:100%;
+}
+body {
+	font-family: tahoma, arial;
+	color: #666;
+	background-color: #fff;
+	position:relative;
+}
+
+a {
+	color: #1296db;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:hover {
+	color: #1296db;
+}
+
+header {
+	height: 180px;
+	background-color: red;
+}
+
+.black {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+	display: none;
+	z-index: 3;
+	position: absolute;
+}
+
+/* loading   */
+
+.loading{
+            /*固定loading*/
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            /*垂直水平居中*/
+            margin: -20px 0 0 -20px;
+            width: 40px;
+            height: 40px;	
+            border: 2px solid;
+            border-color: #1296db #1296db transparent;
+            border-radius: 50%;
+            box-sizing: border-box;
+            /*动画时间1s，线性变化，无限循环*/
+            animation: loading 1s linear infinite;
+            display:none;            
+            z-index:99;
+        }
+        @keyframes loading{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+.boxwrap {
+	box-sizing:content-box;
+	width: 350px;
+	height: 350px;
+	padding: 75px 10px 10px 10px;
+	position: fixed;
+	top: 300px;
+	left: 50%;
+	margin-left: -175px;
+	margin-top: -175px;
+	border-radius: 5px;
+	z-index: 11;
+	display: none;
+	background: url("../imgs/set-s.png") no-repeat 120px 1px transparent;
+}
+
+.boxwrap-register {
+	height:500px;
+	margin-top: -225px;
+	background: url("../imgs/register.png") no-repeat 120px -21px
+		transparent;
+}
+
+.box {
+	padding: 10px;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	border: 2px solid #1296db;
+	box-shadow: 0 0 10px;
+}
+
+form {
+	display: block;
+	margin-top: 30px;
+}
+
+.box-logo {
+	position: absolute;
+	z-index: 12;
+	width: 100%;
+	height: 150px;
+	text-align: center;
+}
+
+.box-logo img {
+	height: 100%;
+}
+
+.main {
+	display:table;
+	width:100%;
+	min-height:500px;
+}
+
+footer {
+	height: 80px;
+	background-color: #1296db;
+	text-align: center;
+	color: #fff;
+	line-height: 80px;
+	border: 1px inset transparent;
+}
+
+.fix-search{
+	background-position:0px 0px;
+}
+/*
+褰撹喘鐗╄溅鎴栬� 鎼滅储鍒楄〃涓虹┖鏃�
+*/
+.clear-list{
+	padding-top:260px;
+	width:1000px;
+	height:450px;
+	background:url("../imgs/clear-list.jpeg") no-repeat center -127px #fff;
+	margin:0 auto;
+	box-sizing:border-box;
+	text-align:center;
+	color:#666;
+	font-size:20px;
+	
+}
